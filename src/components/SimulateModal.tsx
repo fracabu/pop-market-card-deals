@@ -139,7 +139,7 @@ export default function SimulateModal({
             <div>
               <p className="text-sm font-black uppercase text-slate-950 tracking-tight leading-none mb-1.5">{currentCard.name}</p>
               {card && (
-                <p className="text-xs font-bold text-slate-650 flex flex-wrap gap-x-2 gap-y-0.5 leading-tight">
+                <p className="text-xs font-bold text-slate-600 flex flex-wrap gap-x-2 gap-y-0.5 leading-tight">
                   <span>Target: <strong className="text-emerald-700 font-mono">{card.buyUnder}€</strong></span>
                   <span>|</span>
                   <span>Rivendita: <strong className="text-rose-500 font-mono">{card.resaleMin}-{card.resaleMax}€</strong></span>
@@ -201,7 +201,7 @@ export default function SimulateModal({
                 Prezzo di Vendita (€)
               </label>
               <div className="relative">
-                <span className="absolute left-3 top-2.5 text-slate-850 text-sm font-black font-mono">€</span>
+                <span className="absolute left-3 top-2.5 text-slate-800 text-sm font-black font-mono">€</span>
                 <input
                   type="number"
                   required={status === 'completed'}
@@ -240,7 +240,7 @@ export default function SimulateModal({
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
               rows={2}
-              className="w-full bg-slate-50 border-2 border-slate-950 text-slate-950 text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 placeholder-slate-450 resize-none font-bold"
+              className="w-full bg-slate-50 border-2 border-slate-950 text-slate-950 text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-rose-500 placeholder-slate-400 resize-none font-bold"
             />
           </div>
 
@@ -270,7 +270,7 @@ export default function SimulateModal({
             
             <button
               type="submit"
-              className="flex items-center gap-1.5 px-4 py-2 bg-yellow-400 hover:bg-yellow-550 hover:bg-yellow-400 border-2 border-slate-950 text-slate-950 text-xs font-black uppercase rounded-xl shadow-[2.5px_2.5px_0px_0px_#000000] cursor-pointer transition-all active:translate-y-[1px] active:translate-x-[1px] active:shadow-[1px_1px_0px_0px_#000000]"
+              className="flex items-center gap-1.5 px-4 py-2 bg-yellow-400 hover:bg-yellow-400 border-2 border-slate-950 text-slate-950 text-xs font-black uppercase rounded-xl shadow-[2.5px_2.5px_0px_0px_#000000] cursor-pointer transition-all active:translate-y-[1px] active:translate-x-[1px] active:shadow-[1px_1px_0px_0px_#000000]"
             >
               <Save className="h-4 w-4" />
               Salva

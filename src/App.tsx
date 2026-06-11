@@ -164,7 +164,7 @@ export default function App() {
               <h1 className="text-2xl md:text-3xl font-black text-white tracking-tight italic uppercase leading-none">
                 POPMARKET DEALS
               </h1>
-              <p className="text-[10px] md:text-xs text-yellow-250 text-yellow-300 font-extrabold uppercase mt-1">Tracciatore di Arbitraggio Pokémon per Rivenditori</p>
+              <p className="text-[10px] md:text-xs text-yellow-300 font-extrabold uppercase mt-1">Tracciatore di Arbitraggio Pokémon per Rivenditori</p>
             </div>
           </div>
 
@@ -247,7 +247,7 @@ export default function App() {
               
               {/* Search */}
               <div className="relative flex-grow max-w-md">
-                <Search className="absolute left-3.5 top-3 h-4 w-4 text-slate-650 font-bold" />
+                <Search className="absolute left-3.5 top-3 h-4 w-4 text-slate-600 font-bold" />
                 <input
                   type="text"
                   placeholder="Cerca per carta, set, codice..."
@@ -342,7 +342,7 @@ export default function App() {
               <div className="bg-white border-4 border-slate-950 rounded-[2rem] p-12 text-center shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col items-center">
                 <Search className="h-12 w-12 text-slate-400 mb-4 stroke-[2]" />
                 <h4 className="text-base font-black text-slate-950 uppercase tracking-tight">Nessun risultato trovato</h4>
-                <p className="text-xs text-slate-650 font-bold mt-2">Prova a cambiare il testo inserito o ad azzerare i filtri attivi.</p>
+                <p className="text-xs text-slate-600 font-bold mt-2">Prova a cambiare il testo inserito o ad azzerare i filtri attivi.</p>
               </div>
             )}
             
@@ -353,7 +353,7 @@ export default function App() {
             
             {/* Quick quick info helper */}
             <div className="bg-white border-4 border-slate-950 rounded-[2rem] p-5 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] space-y-4">
-              <h3 className="font-extrabold text-sm text-slate-955 uppercase tracking-wide font-display flex items-center gap-2">
+              <h3 className="font-extrabold text-sm text-slate-900 uppercase tracking-wide font-display flex items-center gap-2">
                 <CheckCircle2 className="h-4.5 w-4.5 text-emerald-600 shrink-0" />
                 <span>Riepilogo Totali Reali</span>
               </h3>
@@ -370,7 +370,7 @@ export default function App() {
                   
                   <div className="flex justify-between items-center text-xs font-bold text-slate-700">
                     <span>Operazioni Concluse:</span>
-                    <span className="font-black text-slate-905 text-slate-950">
+                    <span className="font-black text-slate-950">
                       {transactions.filter(t => t.status === 'completed').length} / {transactions.length}
                     </span>
                   </div>
@@ -383,7 +383,7 @@ export default function App() {
                           return s + (tx.sellPrice - tx.buyPrice);
                         }
                         return s;
-                      }, 0) >= 0 ? 'text-emerald-650' : 'text-red-650'
+                      }, 0) >= 0 ? 'text-emerald-600' : 'text-red-600'
                     }`}>
                       {transactions.reduce((s, tx) => {
                         if (tx.status === 'completed' && tx.sellPrice !== null) {
@@ -395,7 +395,7 @@ export default function App() {
                   </div>
                 </div>
               ) : (
-                <p className="text-xs text-slate-650 leading-relaxed font-bold">
+                <p className="text-xs text-slate-600 leading-relaxed font-bold">
                   Nessuna operazione registrata. Clicca su "Simula Affare" e inserisci i prezzi spesi per calcolare i tuoi ritorni reali.
                 </p>
               )}

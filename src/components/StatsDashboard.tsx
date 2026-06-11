@@ -27,7 +27,7 @@ export default function StatsDashboard({ cards }: StatsDashboardProps) {
           <Award className="h-6 w-6 stroke-[2.5]" />
         </div>
         <div>
-          <p className="text-[10px] text-slate-550 uppercase font-black tracking-wider leading-none">Totale Carte</p>
+          <p className="text-[10px] text-slate-500 uppercase font-black tracking-wider leading-none">Totale Carte</p>
           <p className="text-2xl font-black font-display text-slate-950 mt-1.5 leading-none">{totalCards}</p>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function StatsDashboard({ cards }: StatsDashboardProps) {
           <Target className="h-6 w-6 stroke-[2.5]" />
         </div>
         <div>
-          <p className="text-[10px] text-slate-550 uppercase font-black tracking-wider leading-none">Budget d'Acquisto</p>
+          <p className="text-[10px] text-slate-500 uppercase font-black tracking-wider leading-none">Budget d'Acquisto</p>
           <p className="text-2xl font-black font-display text-emerald-600 mt-1.5 leading-none">{totalBuyUnder}€</p>
         </div>
       </div>
@@ -55,8 +55,8 @@ export default function StatsDashboard({ cards }: StatsDashboardProps) {
           <TrendingUp className="h-6 w-6 stroke-[2.5]" />
         </div>
         <div>
-          <p className="text-[10px] text-slate-550 uppercase font-black tracking-wider leading-none">Rivendita Media</p>
-          <p className="text-2xl font-black font-display text-amber-650 mt-1.5 leading-none">{Math.round(avgResale)}€</p>
+          <p className="text-[10px] text-slate-500 uppercase font-black tracking-wider leading-none">Rivendita Media</p>
+          <p className="text-2xl font-black font-display text-amber-600 mt-1.5 leading-none">{Math.round(avgResale)}€</p>
         </div>
       </div>
 
@@ -69,10 +69,10 @@ export default function StatsDashboard({ cards }: StatsDashboardProps) {
           <DollarSign className="h-6 w-6 stroke-[2.5]" />
         </div>
         <div>
-          <p className="text-[10px] text-slate-550 uppercase font-black tracking-wider leading-none">Profitto Medio Stimato</p>
+          <p className="text-[10px] text-slate-500 uppercase font-black tracking-wider leading-none">Profitto Medio Stimato</p>
           <div className="flex items-baseline gap-1 mt-1.5 leading-none">
-            <span className="text-2xl font-black font-display text-indigo-650">+{Math.round(potentialProfit)}€</span>
-            <span className="text-xs font-black text-indigo-550 font-mono">({Math.round((potentialProfit / totalBuyUnder) * 100)}%)</span>
+            <span className="text-2xl font-black font-display text-indigo-600">+{Math.round(potentialProfit)}€</span>
+            <span className="text-xs font-black text-indigo-500 font-mono">({Math.round((potentialProfit / totalBuyUnder) * 100)}%)</span>
           </div>
         </div>
       </div>

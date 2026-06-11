@@ -74,16 +74,16 @@ export default function TransactionList({
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-black uppercase text-slate-950 tracking-tight">{tx.cardName}</span>
                   {tx.status === 'completed' ? (
-                    <span className="flex items-center gap-1 px-2.5 py-0.5 text-[10px] bg-emerald-100 text-emerald-850 rounded-full font-black border-2 border-slate-950 uppercase">
+                    <span className="flex items-center gap-1 px-2.5 py-0.5 text-[10px] bg-emerald-100 text-emerald-800 rounded-full font-black border-2 border-slate-950 uppercase">
                       <CheckCircle className="h-3 w-3" /> Completato
                     </span>
                   ) : (
-                    <span className="flex items-center gap-1 px-2.5 py-0.5 text-[10px] bg-sky-100 text-sky-850 rounded-full font-black border-2 border-slate-950 uppercase">
+                    <span className="flex items-center gap-1 px-2.5 py-0.5 text-[10px] bg-sky-100 text-sky-800 rounded-full font-black border-2 border-slate-950 uppercase">
                       <Package className="h-3 w-3" /> Magazzino
                     </span>
                   )}
                 </div>
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-650 font-bold">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-600 font-bold">
                   <span>Data: <span className="font-mono text-slate-900">{tx.date}</span></span>
                   <span>Acquisto: <span className="font-mono text-emerald-600">{tx.buyPrice}€</span></span>
                   {tx.sellPrice !== null && (
@@ -102,7 +102,7 @@ export default function TransactionList({
                 {profit !== null ? (
                   <div className="text-right">
                     <span className="text-[9px] text-slate-500 block uppercase font-black tracking-wide leading-none">PROFITTO</span>
-                    <span className={`text-base font-black font-mono leading-none block mt-1.5 ${profit >= 0 ? 'text-emerald-600' : 'text-red-650'}`}>
+                    <span className={`text-base font-black font-mono leading-none block mt-1.5 ${profit >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
                       {profit >= 0 ? '+' : ''}{profit.toFixed(1)}€
                     </span>
                     <span className="text-[10px] text-slate-500 block font-black font-mono mt-0.5">({roi}% ROI)</span>

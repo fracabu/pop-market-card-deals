@@ -13,7 +13,7 @@ interface CardCardProps {
 
 const CARD_COLOR_THEMES = [
   { border: 'border-teal-400', shadow: 'shadow-[6px_6px_0px_0px_#2dd4bf]', hoverBg: 'hover:bg-teal-50', iconBg: 'bg-teal-100/55', textBg: 'bg-teal-50', badgeBorder: 'border-teal-300', accentText: 'text-teal-700' },
-  { border: 'border-yellow-400', shadow: 'shadow-[6px_6px_0px_0px_#facc15]', hoverBg: 'hover:bg-yellow-50', iconBg: 'bg-yellow-100/55', textBg: 'bg-yellow-50', badgeBorder: 'border-yellow-300', accentText: 'text-amber-850' },
+  { border: 'border-yellow-400', shadow: 'shadow-[6px_6px_0px_0px_#facc15]', hoverBg: 'hover:bg-yellow-50', iconBg: 'bg-yellow-100/55', textBg: 'bg-yellow-50', badgeBorder: 'border-yellow-300', accentText: 'text-amber-800' },
   { border: 'border-indigo-400', shadow: 'shadow-[6px_6px_0px_0px_#818cf8]', hoverBg: 'hover:bg-indigo-50', iconBg: 'bg-indigo-100/55', textBg: 'bg-indigo-50', badgeBorder: 'border-indigo-300', accentText: 'text-indigo-800' },
   { border: 'border-orange-400', shadow: 'shadow-[6px_6px_0px_0px_#fb923c]', hoverBg: 'hover:bg-orange-50', iconBg: 'bg-orange-100/55', textBg: 'bg-orange-50', badgeBorder: 'border-orange-300', accentText: 'text-orange-900' },
   { border: 'border-purple-400', shadow: 'shadow-[6px_6px_0px_0px_#c084fc]', hoverBg: 'hover:bg-purple-50', iconBg: 'bg-purple-100/55', textBg: 'bg-purple-50', badgeBorder: 'border-purple-300', accentText: 'text-purple-800' },
@@ -38,7 +38,7 @@ export default function CardCard({ card, status, onStatusChange, onSimulate }: C
     switch (status) {
       case 'looking':
         return (
-          <span className="px-2 py-0.5 text-[10px] font-black uppercase rounded bg-sky-100 text-sky-850 border-2 border-slate-950">
+          <span className="px-2 py-0.5 text-[10px] font-black uppercase rounded bg-sky-100 text-sky-800 border-2 border-slate-950">
             Cerco
           </span>
         );
@@ -156,11 +156,11 @@ export default function CardCard({ card, status, onStatusChange, onSimulate }: C
             <div className="flex items-center gap-2">
               <TrendingUp className="h-5 w-5 text-indigo-600 shrink-0" />
               <div className="text-left">
-                <span className="text-[9px] text-slate-650 block uppercase font-black tracking-wide leading-none">Margine Stimato</span>
+                <span className="text-[9px] text-slate-600 block uppercase font-black tracking-wide leading-none">Margine Stimato</span>
                 <span className="text-sm font-black text-indigo-950 font-mono">+{minGain}-{maxGain}€</span>
               </div>
             </div>
-            <span className="text-xs font-black bg-indigo-505 bg-indigo-600 text-white rounded-md px-2 py-0.5 border-2 border-slate-950 font-mono">
+            <span className="text-xs font-black bg-indigo-600 text-white rounded-md px-2 py-0.5 border-2 border-slate-950 font-mono">
               +{roi}% ROI
             </span>
           </div>
@@ -173,7 +173,7 @@ export default function CardCard({ card, status, onStatusChange, onSimulate }: C
             <select
               value={status}
               onChange={(e) => onStatusChange(card.id, e.target.value as any)}
-              className="w-full text-xs font-bold bg-slate-50 border-2 border-slate-955 border-slate-950 text-slate-900 rounded-lg px-2.5 py-1.5 focus:outline-none cursor-pointer"
+              className="w-full text-xs font-bold bg-slate-50 border-2 border-slate-950 text-slate-900 rounded-lg px-2.5 py-1.5 focus:outline-none cursor-pointer"
             >
               <option value="none">Seleziona Stato</option>
               <option value="looking">Cerco da Comprare</option>
@@ -185,7 +185,7 @@ export default function CardCard({ card, status, onStatusChange, onSimulate }: C
           <button
             onClick={() => onSimulate(card)}
             title="Calcola profitto actual"
-            className="mt-4 p-2.5 bg-yellow-300 hover:bg-yellow-450 hover:bg-yellow-400 border-2 border-slate-950 rounded-lg text-slate-950 hover:translate-y-[-1px] transition-all cursor-pointer shadow-[2px_2px_0px_0px_#000000]"
+            className="mt-4 p-2.5 bg-yellow-300 hover:bg-yellow-400 border-2 border-slate-950 rounded-lg text-slate-950 hover:translate-y-[-1px] transition-all cursor-pointer shadow-[2px_2px_0px_0px_#000000]"
           >
             <PenSquare className="h-4 w-4" />
           </button>
