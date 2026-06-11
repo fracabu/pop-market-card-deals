@@ -1,0 +1,6 @@
+{
+  "name": "Pokémon Card Deals",
+  "description": "Lista di carte Pokémon con prezzi di acquisto e rivendita per tracciare le migliori opportunità.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
