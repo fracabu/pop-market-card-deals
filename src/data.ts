@@ -50,7 +50,7 @@ export const POKEMON_CARDS: PokemonCard[] = [
     buyUnder: 110,
     resaleMin: 75,
     resaleMax: 95,
-    imageUrl: 'https://product-images.tcgplayer.com/fit-in/437x437/475427.jpg',
+    imageUrl: 'https://images.pokemontcg.io/swsh12pt5gg/GG70_hires.png',
     cardmarketUrl: 'https://www.cardmarket.com/it/Pokemon/Products/Singles/Crown-Zenith/Arceus-VSTAR-CRZGG70'
   },
   {
@@ -63,7 +63,7 @@ export const POKEMON_CARDS: PokemonCard[] = [
     buyUnder: 160,
     resaleMin: 120,
     resaleMax: 150,
-    imageUrl: 'https://images.pokemontcg.io/swsh12pt5/gg69_hires.png',
+    imageUrl: 'https://images.pokemontcg.io/swsh12pt5gg/GG69_hires.png',
     cardmarketUrl: 'https://www.cardmarket.com/en/Pokemon/Products/Singles/Crown-Zenith/Giratina-VSTAR-CRZGG69'
   },
   {
@@ -154,7 +154,7 @@ export const POKEMON_CARDS: PokemonCard[] = [
     buyUnder: 40,
     resaleMin: 35,
     resaleMax: 50,
-    imageUrl: 'https://images.pokemontcg.io/swsh12pt5/gg40.png',
+    imageUrl: 'https://images.pokemontcg.io/swsh12pt5gg/GG40_hires.png',
     cardmarketUrl: 'https://www.cardmarket.com/en/Pokemon/Products/Singles/Crown-Zenith/Glaceon-VSTAR-CRZGG40'
   },
   {
@@ -167,7 +167,7 @@ export const POKEMON_CARDS: PokemonCard[] = [
     buyUnder: 25,
     resaleMin: 30,
     resaleMax: 45,
-    imageUrl: 'https://images.pokemontcg.io/swsh12pt5/gg35.png',
+    imageUrl: 'https://images.pokemontcg.io/swsh12pt5gg/GG35_hires.png',
     cardmarketUrl: 'https://www.cardmarket.com/en/Pokemon/Products/Singles/Crown-Zenith/Leafeon-VSTAR-CRZGG35'
   },
   {
@@ -180,7 +180,7 @@ export const POKEMON_CARDS: PokemonCard[] = [
     buyUnder: 20,
     resaleMin: 30,
     resaleMax: 40,
-    imageUrl: 'https://images.pokemontcg.io/swsh12pt5/gg38_hires.png',
+    imageUrl: 'https://images.pokemontcg.io/swsh12pt5gg/GG38_hires.png',
     cardmarketUrl: 'https://www.cardmarket.com/en/Pokemon/Products/Singles/Crown-Zenith/Suicune-V-CRZGG38'
   }
 ];
